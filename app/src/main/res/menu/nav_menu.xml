@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+            <item
+                android:id="@+id/navAccountInfo"
+                android:icon="@drawable/ic_accountant"
+                android:title="@string/AccountInfo"
+                android:visible="false" />
+            <item
+                android:id="@+id/navSavedAddress"
+                android:icon="@drawable/ic_map"
+                android:title="@string/SavedAddresses"
+                android:visible="false" />
+            <item
+                android:id="@+id/navOrderHestory"
+                android:icon="@drawable/order"
+                android:title="@string/MyOrders"
+                android:visible="false" />
+        <item
+            android:id="@+id/navPolicy"
+            android:title="@string/policy"
+            android:icon="@drawable/ic_policy" />
+        <item android:title="@string/joinUs">
+            <menu>
+                <item
+                    android:title="@string/signUpV"
+                    android:id="@+id/navSignUpVendor"
+                    android:icon="@drawable/ic_vendor" />
+            </menu>
+        </item>
+        <item
+            android:title="@string/Goodbye"
+            android:visible="false"
+            android:id="@+id/seeYou">
+            <menu>
+                <item
+                    android:title="@string/logout"
+                    android:id="@+id/navLogOut"
+                    android:icon="@drawable/ic_logout" />
+            </menu>
+        </item>
+    </group>
+</menu>

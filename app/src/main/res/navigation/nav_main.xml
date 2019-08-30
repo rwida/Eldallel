@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/addressFragment">
+
+    <fragment
+        android:id="@+id/shopsFragment"
+        android:name="com.project.eldalell.user.Fragments.ShopsFragment"
+        android:label="fragment_shops"
+        tools:layout="@layout/fragment_shops">
+        <action
+            android:id="@+id/action_shopsFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vendorFragment"
+        android:name="com.project.eldalell.user.Fragments.VendorFragment"
+        android:label="fragment_vendor"
+        tools:layout="@layout/fragment_vendor" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.project.eldalell.user.Fragments.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/reviewOrderFragment"
+        android:name="com.project.eldalell.user.Fragments.ReviewOrderFragment"
+        android:label="fragment_review_order"
+        tools:layout="@layout/fragment_review_order">
+        <action
+            android:id="@+id/action_reviewOrderFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.project.eldalell.user.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.project.eldalell.user.Fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.project.eldalell.user.Fragments.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" />
+    <fragment
+        android:id="@+id/orderSetupFragment"
+        android:name="com.project.eldalell.user.Fragments.OrderSetupFragment"
+        android:label="fragment_order_setup"
+        tools:layout="@layout/fragment_order_setup" />
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.project.eldalell.user.Fragments.OrderHistoryFragment"
+        android:label="fragment_order_history"
+        tools:layout="@layout/fragment_order_history" />
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="com.project.eldalell.user.Fragments.UpcomingFragment"
+        android:label="fragment_upcoming"
+        tools:layout="@layout/fragment_upcoming" />
+    <fragment
+        android:id="@+id/accountInfoFragment"
+        android:name="com.project.eldalell.user.Fragments.AccountInfoFragment"
+        android:label="fragment_account_info"
+        tools:layout="@layout/fragment_account_info" />
+    <fragment
+        android:id="@+id/traceOrderFragment"
+        android:name="com.project.eldalell.user.Fragments.TraceOrderFragment"
+        android:label="fragment_trace_order"
+        tools:layout="@layout/fragment_trace_order" />
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.project.eldalell.user.Fragments.AddressesFragment"
+        android:label="fragment_addresses"
+        tools:layout="@layout/fragment_addresses" />
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.project.eldalell.user.Fragments.AddAddressFragment"
+        android:label="fragment_add_address"
+        tools:layout="@layout/fragment_add_address" />
+
+</navigation>

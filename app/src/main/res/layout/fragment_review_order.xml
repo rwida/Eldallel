@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ReviewOrderFragment">
+
+
+    <include
+        layout="@layout/appbar_order_review"
+        android:layout_width="match_parent"
+        android:id="@+id/icloded"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/icloded"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="75dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Your Order"
+                android:textColor="#4E0202"
+                android:textSize="35sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:background="#707070"
+                android:textColor="#707070"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="1sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvOrder"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="20dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:splitMotionEvents="false"
+                app:layoutManager="LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:background="#707070"
+                android:textColor="#707070"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="1sp" />
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Subtotal"
+                    android:gravity="center"
+                    android:paddingEnd="22dp"
+                    android:textColor="#635A5A"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvSubTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="13.95 EGP"
+                    android:textColor="#4E0202"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Delivery Cost"
+                    android:textColor="#635A5A"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDeliveryCoast"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="10.00 EGP"
+                    android:textColor="#4E0202"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="40dp"
+                    android:textStyle="bold"
+                    android:text="Total"
+                    android:textColor="#635A5A"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalReviewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20dp"
+                    android:textStyle="bold"
+                    android:text="23.95 EGP"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#4E0202"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnProceedOrder"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Proceed Order"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="23sp" />
+</RelativeLayout>

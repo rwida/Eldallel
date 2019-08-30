@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:id="@+id/shopType">
+
+    <ImageView
+        android:id="@+id/imgShopType"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/shopBack" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imgShopType"
+        app:layout_constraintEnd_toEndOf="@+id/imgShopType"
+        app:layout_constraintStart_toStartOf="@+id/imgShopType"
+        app:layout_constraintTop_toTopOf="@+id/imgShopType">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvShopType"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/allShops"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

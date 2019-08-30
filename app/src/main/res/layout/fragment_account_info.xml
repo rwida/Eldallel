@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AccountInfoFragment"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Edit_info"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/enter_password_only_if_you_want_to_change_password"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/etFirstNameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:inputType="text"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="@string/registerFirstName"
+                android:padding="10dp"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etLastNameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="@string/registerLastName"
+                android:padding="10dp"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etEmailInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="@string/registerEmail"
+                android:padding="10dp"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPasswordInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="@string/registerPassword"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPhoneInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="@string/registerPhone"
+                android:padding="10dp"
+                android:inputType="phone"
+                android:textColorHint="@color/colorHint"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="BirthDay" />
+
+                <TextView
+                    android:id="@+id/tvDateOfBirthInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/selectDate"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/RegisterPickGender" />
+
+                <RadioGroup
+                    android:id="@+id/rvGroupInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdFemaleInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/rdMaleInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toRightOf="@id/rdFemale"
+                        android:text="Male" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEditInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorButton"
+                android:text="@string/Edit_info"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
